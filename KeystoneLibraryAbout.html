@@ -9,7 +9,6 @@ img{
 .topnav {
   background-color: rgb(42, 41, 38);
   overflow: hidden;
-  height: 50px;
 }
 .topnav a {
   float: left;
@@ -95,9 +94,17 @@ img{
  justify-content: center; 
  align-items: center;
  margin-top: 60px;
-    
 } 
-
+.coordinatortitle{
+  display: flex;
+  justify-content: left;
+  margin-left: 185px;
+  margin-top: 50px;
+}
+.revittitle{
+  display: flex;
+  text-align: right;
+}
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
@@ -121,9 +128,9 @@ img{
 
 <div class="topnav header">
     <a href="KeystoneLibraryHome.html"><img width="25" height="20"src="https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/uncc.sidearmsports.com/responsive_2020/logo_footer_edu.png"></a>
-    <a href="KeystoneLibraryAssignments.html">Assignments</a>
     <a href="KeystoneLibraryJournals.html">Journals</a>
     <a class="active" ref="KeystoneLibraryAbout.html">About Us</a>
+    <a href="KeystoneLibraryContact.html">Contact Us</a>
   </div>
 
   <div class="header">
@@ -140,20 +147,161 @@ img{
 
 </div>
 
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.team{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgb(42, 41, 38);
+  text-align: center;
+  cursor: pointer;
+  width: 200px;
+  height: 30px;
+}
+.title {
+  color: grey;
+}
+.container {
+  padding: 0 16px;
+}
+.column {
+  float: left;
+  width: 15%;
+  margin-bottom: 12px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  width: 250px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.coordinator{
+    font-size: 25px;
+}
+.revit{
+    font-size: 25px;
+}
+.show{
+    empty-cells: show;
+}  
+.border{
+    border: 1px solid black;
+}
+.border2{
+    border:1px solid black;
+    }
+</style>
+</head>
 
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img width="250" height="250" src="https://synapse.it/wp-content/uploads/2020/12/test.png">
-      <div class="container"
-      <h2>John Doe</h2>
-      <p class="title">Project Coordinator/Architect</p>
-      <p>description</p>
-      <p>coordinator@ceectec.com</p>
-      <p><button class="button">Contact</button></p>
-    </div>
-  </div>
+<div class="team">
+    <table class="show" style="width:100%">
+        <tr>
+            <th class="coordinator" style="width: 22%">Project Coordinator(s)</th>
+            <th style="width: 15%"></th>
+            <th class="revit" style="width: 33%;">Revit Design Team</th>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img width="250" height="250" src="https://synapse.it/wp-content/uploads/2020/12/test.png">
+                        <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Project Coordinator/Architect</p>
+                        <p>description</p>
+                        <p>coordinator@ceectec.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="row" style="float: right;">
+                    <div class="column">
+                      <div class="card">
+                        <img width="250" height="250" src="https://synapse.it/wp-content/uploads/2020/12/test.png">
+                        <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Project Coordinator/Architect</p>
+                        <p>description</p>
+                        <p>coordinator@ceectec.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+           <td>
+
+           </td> 
+
+           <td>
+               <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <img width="250" height="250" src="https://synapse.it/wp-content/uploads/2020/12/test.png">
+                        <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Project Coordinator/Architect</p>
+                        <p>description</p>
+                        <p>coordinator@ceectec.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+        
+
+                <div class="row" style="float: right;">
+                    <div class="column">
+                      <div class="card">
+                        <img width="250" height="250" src="https://synapse.it/wp-content/uploads/2020/12/test.png">
+                        <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Project Coordinator/Architect</p>
+                        <p>description</p>
+                        <p>coordinator@ceectec.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" style="float: right;">
+                    <div class="column">
+                      <div class="card">
+                        <img width="250" height="250" src="https://synapse.it/wp-content/uploads/2020/12/test.png">
+                        <div class="container">
+                        <h2>John Doe</h2>
+                        <p class="title">Project Coordinator/Architect</p>
+                        <p>description</p>
+                        <p>coordinator@ceectec.com</p>
+                        <p><button class="button">Contact</button></p>
+                        </div>
+                    </div>
+                </div>
+           </td>
+
+
+        </tr>
+    
+        
+    </table>
 </div>
 
+</html>
 
 </html>
