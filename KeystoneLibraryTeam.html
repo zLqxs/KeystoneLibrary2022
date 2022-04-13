@@ -57,6 +57,7 @@ img{
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin:8px;
+  resize: vertical;
 }
 
 .about-section {
@@ -80,18 +81,6 @@ img{
   color: grey;
 }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: rgb(42, 41, 38);
-  text-align: center;
-  cursor: pointer;
-  width: 200px;
-  height: 30px;
-}
 .team{
   display: flex; 
  justify-content: center; 
@@ -118,6 +107,26 @@ img{
 }
 .descriptions{
   width: 49%;
+}
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+}
+.layout {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 50%;
+  gap: 8px;
+  grid-auto-flow: column;
+}
+.rolename{
+  font-size: small;
+}
+.roledesc{
+  text-align: center;
 }
 @media screen and (max-width: 650px) {
   .column {
@@ -163,144 +172,127 @@ img{
   <h1 class="teamheader"style="text-align:center">Our Team</h1>
   <hr style="width: 125px; height: 1px; background-color: black;" >
 
-<table>
-  <tr>
-    <td class="border">
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/FDw5gXR.jpg" alt="Mauricio" style="width:100%">
-            <div class="container">
-              <h2>Mauricio Martinez Aguirre</h2>
-              <p class="title">Project Lead/Physical Model Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/dcrd6D4.jpg" alt="Faith" style="width:100%">
-            <div class="container">
-              <h2>Faith Freeman</h2>
-              <p class="title">Project Lead/Physical Model Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/UKJASqw.jpg" alt="Alex" style="width:100%">
-            <div class="container">
-              <h2>Alex Grady</h2>
-              <p class="title">Physical Model Team</p>
-            </div>
-          </div>
+  <section class="layout">
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/FDw5gXR.jpg" alt="Mauricio" style="width:100%">
+        <div class="container">
+          <h4><b>Mauricio Martinez Aguirre</b></h4>
+          <p>Project Lead/Physical Model Team</p>
         </div>
       </div>
-    
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/m154tGU.jpg" alt="Ani" style="width:100%">
-            <div class="container">
-              <h2>Aniela Haines</h2>
-              <p class="title">Physical Model Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/0Jdf1Yi.jpg" alt="Abby" style="width:100%">
-            <div class="container">
-              <h2>Abby Cosentine</h2>
-              <p class="title">Revit Model Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="row">
-          <div class="column">  
-            <div class="card">
-              <img src="https://i.imgur.com/BqaLqf6.jpg" alt="Emmanuel" style="width: 100%;">
-              <div class="container">
-                <h2>Emmanuel Mata-Esqueda</h2>
-                <p class="title">Revit Model Team</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/fqwo5Fn.jpg" alt="Sawyer" style="width:100%">
-            <div class="container">
-              <h2>Sawyer Elsener</h2>
-              <p class="title">Revit Model Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/uNOeIVK.jpg" alt="JP" style="width:100%">
-            <div class="container">
-              <h2>JP Aponte</h2>
-              <p class="title">Street Art/Mural Design Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/OI9arpI.jpg" alt="Kate" style="width:100%">
-            <div class="container">
-              <h2>Kate Cosentine</h2>
-              <p class="title">Street Art/Mural Design Team</p>
-            </div>
-          </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/m154tGU.jpg" alt="Ani" style="width:100%">
+        <div class="container">
+          <h4><b>Aniela Haines</b></h4>
+          <p>Physical Model Team</p>
         </div>
       </div>
-    
-      <div class="row">
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/PzxA0kW.jpg" alt="Johnny" style="width:100%">
-            <div class="container">
-              <h2>Johnny Ta</h2>
-              <p class="title">Website/Infographic Team</p>
-            </div>
-          </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/nSeOOuv.jpg" alt="Nolan" style="width:100%">
-            <div class="container">
-              <h2>Nolan Hunter</h2>
-              <p class="title">Website/Infographic Team</p>
-          </div>
-        </div>
-        </div>
-      
-        <div class="column">
-          <div class="card">
-            <img src="https://i.imgur.com/jXmEwfF.jpg" alt="Luis" style="width:100%">
-            <div class="container">
-              <h2>Luis Cuarenta Alvarado</h2>
-              <p class="title">Website/Infographic Team</p>
-            </div>
-          </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/fqwo5Fn.jpg" alt="Sawyer" style="width:100%">
+        <div class="container">
+          <h4><b>Sawyer Elsener</b></h4>
+          <p>Revit Model Team</p>
         </div>
       </div>
-    </td>
-
-    <td class="border descriptions">
-      <h2 class="teamheader2" style="vertical-align: top; text-align: center;">Team Roles</h2>
-    </td>
-  </tr>
-</table>
-  
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/PzxA0kW.jpg" alt="Johnny" style="width:100%">
+        <div class="container">
+          <h4><b>Johnny Ta</b></h4>
+          <p>Website/Infographic Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/dcrd6D4.jpg" alt="Faith" style="width:100%">
+        <div class="container">
+          <h4><b>Faith Freeman</b></h4>
+          <p>Project Lead/Physical Model Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/0Jdf1Yi.jpg" alt="Abby" style="width:100%">
+        <div class="container">
+          <h4><b>Abby Cosentine</b></h4>
+          <p>Revit Model Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/uNOeIVK.jpg" alt="JP" style="width:100%">
+        <div class="container">
+          <h4><b>JP Aponte</b></h4>
+          <p>Street Art/Mural Design Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/nSeOOuv.jpg" alt="Nolan" style="width:100%">
+        <div class="container">
+          <h4><b>Nolan Hunter</b></h4>
+          <p>Website/Infographic Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/UKJASqw.jpg" alt="Alex" style="width:100%">
+        <div class="container">
+          <h4><b>Alex Grady</b></h4>
+          <p>Physical Model Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/BqaLqf6.jpg" alt="Emmanuel" style="width:100%">
+        <div class="container">
+          <h4><b>Emmanuel Mata-Esqueda</b></h4>
+          <p>Revit Model Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/OI9arpI.jpg" alt="Kate" style="width:100%">
+        <div class="container">
+          <h4><b>Kate Cosentine</b></h4>
+          <p>Street Art/Mural Design Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="card">
+        <img src="https://i.imgur.com/jXmEwfF.jpg" alt="Luis" style="width:100%">
+        <div class="container">
+          <h4><b>Luis Cuarenta Alvarado</b></h4>
+          <p>Website/Infographic Team</p>
+        </div>
+      </div>
+    </div>
+    <div class="roledesc">
+      <h2>Team Roles</h2>
+      <hr style="width: 100px; height: 1px; background-color: black;" >
+      <p>Project Coordinator/Architect: placeholder</p>
+      <p>Revit Model Team: placeholder</p>
+      <p>Street Art/Mural Design Team: placeholder</p>
+      <p>Website/Infographic Team: placeholder</p>
+      <p>Physical Model Teeam: placeholder</p>
+    </div>
+    <div class="">14</div>
+    <div class="">15</div>
+    <div class="">16</div>
+  </section>
 </body>
 </html>
