@@ -121,6 +121,7 @@ img{
 }
 .teamroles{
   text-align: center;
+  font-size:large;
 }
 @media screen and (max-width: 600px) {
   .column {
