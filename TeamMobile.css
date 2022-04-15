@@ -90,6 +90,7 @@ img{
 .teamheader{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 75px;
+  font-weight:700px;
 }
 .teamheader2{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -120,7 +121,7 @@ img{
 .teamroles{
   text-align: center;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .column {
     width: 100%;
     display: block;
