@@ -37,7 +37,8 @@ img{
 }
 .header {
   position: fixed;
-  top: 0;
+  left:0px;
+  top:0px;
   z-index: 1;
   width: 100%;
   background-color: rgb(42, 41, 38);
