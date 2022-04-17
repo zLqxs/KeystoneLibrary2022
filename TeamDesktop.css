@@ -2,6 +2,7 @@ img{
     float: center;
     width: 100;
 }
+
 .topnav {
   background-color: rgb(42, 41, 38);
   overflow: hidden;
@@ -55,6 +56,8 @@ img{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin:8px;
   resize: vertical;
+  min-height: fit-content;
+  border-radius: 5%;
 }
 
 .about-section {
@@ -64,9 +67,11 @@ img{
   color: white;
 }
 
-.container {
-  padding: 0 16px;
-}
+.container{
+    padding: 0 10px;
+   height: 85px;
+   text-align: center;
+}   
 
 .container::after, .row::after {
   content: "";
@@ -96,7 +101,8 @@ img{
 }
 
 .teamheader{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight:bolder;
   margin-top: 75px;
 }
 .teamheader2{
@@ -120,16 +126,36 @@ img{
   grid-auto-flow: column;
 }
 .rolename{
-  font-size: small;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
 }
+
 .roledesc{
   text-align: left;
   padding-left: 100px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: medium;
+}
+.rightrole{
+    text-align: left;
+    padding-left: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight:bold;
 }
 .teamroles{
   text-align: center;
 }
-
+.mau{
+    margin-bottom: 5px;
+}
+.names{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.round{
+  border-radius: 5% 5% 0% 0%;
+}
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;
