@@ -101,12 +101,8 @@ img{
 }
 
 .teamheader{
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight:bolder;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 75px;
-}
-.teamheader2{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .descriptions{
   width: 49%;
@@ -126,14 +122,15 @@ img{
   grid-auto-flow: column;
 }
 .rolename{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
     font-size: 12px;
 }
 
 .roledesc{
   text-align: left;
   padding-left: 100px;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: medium;
 }
@@ -150,11 +147,17 @@ img{
     margin-bottom: 5px;
 }
 .names{
-    font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .round{
   border-radius: 5% 5% 0% 0%;
+}
+.roletitle{
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  padding-left: 75px;
+  font-size: medium;
 }
 @media screen and (max-width: 650px) {
   .column {
