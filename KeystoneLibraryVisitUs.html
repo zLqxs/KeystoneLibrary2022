@@ -3,7 +3,7 @@
 <head>
 <title>Visit Us</title>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway&display=swap');
     
 img{
     float: center;
@@ -66,12 +66,32 @@ img{
 .addressheader{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
 }
 .address{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     font-size: 25px;
+}
+.hours{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.border{
+    border: solid  black;
+}
+.layout {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(2, 50%);
+  gap: 0px;
 }
 </style>
 
@@ -104,13 +124,28 @@ img{
 
 
 <div class="headerfont" style="text-align: center;">
-  <h1>Visit Us Today!<hr style="width: 225px; background-color: black;height: 2px;"></h1>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1937.4230289167224!2d-80.745654!3d35.3087605!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1650431009427!5m2!1sen!2sus" width="1900" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <h1>Find Us!<hr style="width: 225px; background-color: black;height: 2px;"></h1>
 </div>
 
-<div>
-  <h1 class="addressheader"> Our Address</h1>
-  <p class="address">UNCC Fitness Trail, Charlotte, NC 28262</p>
-</div>
+<section class="layout">
+    <div class="">  
+        <h1 class="addressheader">CEECTEC Campus @ UNCC</h1>
+        <p class="address">9000 Robert D. Snyder Rd, Charlotte, NC 28223</p>
+        <br>
+        <hr>  
+        <br>
+        <table class="hours">
+          <tr><th colspan="2"><u>Our Business Hours</u></th></tr>  
+          <tr><th>Sunday:</th><td>10:00 AM - 4:00 PM</td></tr>
+          <tr><th>Monday:</th><td>8:30 AM - 4:30 PM</td></tr>
+          <tr><th>Tuesday:</th><td>8:30 AM - 4:30 PM</td></tr>
+          <tr><th>Wednesday:</th><td>8:30 AM - 4:30 PM</td></tr>
+          <tr><th>Thursday:</th><td>8:30 AM - 4:30 PM</td></tr>
+          <tr><th>Friday:</th><td>8:30 AM - 4:30 PM</td></tr>
+          <tr><th>Saturday:</th><td>9:00 AM - 5:00 PM</td></tr>
+          </table></div>
+    <div class=""> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1627.9282240481532!2d-80.74678510830269!3d35.30954824512007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4b87965ce2064cfe!2zMzXCsDE4JzM0LjQiTiA4MMKwNDQnNDQuNCJX!5e0!3m2!1sen!2sus!4v1650501665464!5m2!1sen!2sus" width="100%" height="450" style="border:0;float: right;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+  </section>
+
 
 </html>
