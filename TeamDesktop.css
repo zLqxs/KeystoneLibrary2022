@@ -102,6 +102,7 @@ img{
 
 .teamheader{
   font-family: 'Montserrat', sans-serif;
+  font-weight: 400px;
   margin-top: 75px;
 }
 .descriptions{
@@ -112,13 +113,16 @@ img{
   margin-right: auto;
 }
 .layout {
-  width: 100%;
-  height: 100%;
+  width: 75%;
+  height: 45%;
+  margin-right: auto;
+  margin-left: auto;
+
 
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: 1fr 1fr 1fr 50%;
-  gap: 0px;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(3, 33%);
+  gap: 8px;
   grid-auto-flow: column;
 }
 .rolename{
@@ -155,9 +159,14 @@ img{
 }
 .roletitle{
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   text-align: left;
   padding-left: 75px;
   font-size: medium;
+}
+.align{
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 650px) {
   .column {
